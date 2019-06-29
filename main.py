@@ -32,7 +32,7 @@ def balance_sheet(transactions, cur_bal):
             bal_csv_writer.writerow([trans[0], trans[1], trans[2], trans[3], trans[4], trans[5], str.format('{0:.2f}', cur_bal)])
 
 if __name__ == "__main__":
-    print("Hello")
+    print("Small Change!")
     transactions = []
     transactions = read_csv(sys.argv[1])
     balance_sheet(transactions, sys.argv[2])
